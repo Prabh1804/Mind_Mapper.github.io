@@ -218,7 +218,6 @@
 				top: 66vh;
 				left: -27vh;
 				width: 80vh;
-				height: 80vh;
 				z-index: -2;
-				animation: rotatePlanet 180s linear infinite;
+				animation: rotatePlanet 250s linear infinite;
 			}
