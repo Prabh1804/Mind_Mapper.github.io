@@ -9,16 +9,16 @@
 			constructor(){
 				this.x = Math.random()*canvas.width;
 				this.y = (Math.random()*0.6)*canvas.height;
-				this.size = Math.random()*2 + 3.5;
-				this.speedX = -7;					
-				this.speedY = 7;
+				this.size = Math.random() + 2.5;
+				this.speedX = -10;
+				this.speedY = 10;
 			}
 			update(){
 				this.x += this.speedX;
 				this.y += this.speedY;
 			}
 			draw(){
-				ctx.fillStyle = `rgba(255,255,255,0.5)`;
+				ctx.fillStyle = `rgba(255,255,255,0.8)`;
 				ctx.beginPath();
 				ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
 				ctx.fill();
@@ -41,7 +41,7 @@
 
 		particleArray[currentIndex].update();
 
-		if(particleArray[currentIndex].y > canvas.height){
+		if(particleArray[currentIndex].y > (Math.random()+3)*canvas.height){
 			particleArray[currentIndex].x = Math.random()*canvas.width;
 			particleArray[currentIndex].y = (Math.random()*0.6)*canvas.height;
 			currentIndex = (currentIndex + 1) % particleArray.length;
