@@ -150,9 +150,6 @@
 			.mobile_message{
 				display: none;
 			}
-			.mobile_message_bg{
-				display: none;
-			}
 			.mobile_bg_planet{
 				display: none;
 			}
@@ -243,21 +240,53 @@
 			}
 }
 @media (orientation:portrait){
-	*{
-		display: none;
-	}
 	body{
 		display: block;
+		background-color: black;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		display: grid;
+		align-content: center;
+		justify-content: center;
+		margin: 0;
 	}
-/*	 body .mobile_message_bg{
+	 .mobile_message{
 		display: block;
-	}*/
-	body .mobile_message{
-		display: block;
-		color: black;
+		color: white;
+		font-family: Arial, sans-serif;
 		z-index: 999;
+		text-align: center;
+		font-weight: 600;
+		font-size: 4vh;
+		position: static;
 	}
-/*	body .mobile_bg_planet{
+	 .mobile_bg_planet{
 		display: block;
-	}*/
+		height: 30vh;
+		width: auto;
+		position: fixed;
+		top: 35vh;
+		left: 20vw;
+		margin: 0;
+		opacity: 0.5;
+	}
+	.last_second_grid{
+		display: none;
+	}
+	.additional_div{
+		display: none;
+	}
+	.line{
+		display: none;
+	}
+	.canvas1{
+		display: none;
+	}
+	.planet{
+		display: none;
+	}
+	.bg_planet{
+		display: none;
+	}
 }
