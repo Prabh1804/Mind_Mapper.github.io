@@ -70,7 +70,7 @@
 			.bttn00, .bttn01, .bttn02, .bttn03, .bttn10, .bttn11, .bttn12, .bttn13, .bttn20, .bttn21, .bttn22, .bttn23, .bttn30, .bttn31, .bttn32, .bttn33{
 				height: 20px;
 				width: 30px;
-				background-color: #c70808;
+				background: linear-gradient(to right, #c70808, #ed855c);
 				border: none;
 				border-radius: 5px;
 				box-shadow: 2px 2px 1px rgb(100,100,100);
@@ -90,7 +90,7 @@
 			.btn_red1, .btn_red2, .btn_red3, .btn_red0{
 				height: 20px;
 				width: 30px;
-				background-color: #c70808;
+				background: linear-gradient(to right, #c70808, #ed855c);
 				border: none;
 				border-radius: 5px;
 				box-shadow: 2px 2px 1px rgb(100,100,100);

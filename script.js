@@ -365,8 +365,10 @@ else if(e.target.classList.contains("bttn33")){
 	let zz = document.querySelector(".somediv53");
 	zz.remove();
 }
-
 	});
+
+
+
 
 
 
@@ -413,25 +415,25 @@ else if(e.target.classList.contains("bttn33")){
 				
 					let inputtrail = document.querySelector(".secsome0");
 					let recttrail = inputtrail.getBoundingClientRect();
-					path1 = `<path d = " M ${rect1.left + rect1.width/2},${rect1.bottom - 1} L ${recttrail.right - recttrail.width/2},${recttrail.top + 1} " stroke="#88188c" stroke-width="3" filter="blur(1.3px)"/>`;
+					path1 = `<path d = " M ${rect1.left + rect1.width/2},${rect1.bottom - 1} L ${recttrail.right - recttrail.width/2},${recttrail.top + 1} " stroke="#cccccc" stroke-width="3" filter="blur(1.1px)"/>`;
 					joinline += path1;
 				};
 				if(variable > 1 && red_flag1 == false){
 					let inputtrail1 = document.querySelector(".secsome1");
 					let recttrail1 = inputtrail1.getBoundingClientRect();
-					path2 = `<path d = " M ${rect1.left + rect1.width/2},${rect1.bottom - 1} L ${recttrail1.right - recttrail1.width/2},${recttrail1.top + 1} " stroke="#88188c" stroke-width="3" filter="blur(1.3px)"/>`;
+					path2 = `<path d = " M ${rect1.left + rect1.width/2},${rect1.bottom - 1} L ${recttrail1.right - recttrail1.width/2},${recttrail1.top + 1} " stroke="#cccccc" stroke-width="3" filter="blur(1.1px)"/>`;
 					joinline += path2;
 				};
 				if(variable > 2 && red_flag2 == false){
 					let inputtrail2 = document.querySelector(".secsome2");
 					let recttrail2 = inputtrail2.getBoundingClientRect();
-					path3 = `<path d = " M ${rect1.left + rect1.width/2},${rect1.bottom - 1} L ${recttrail2.right - recttrail2.width/2},${recttrail2.top + 1} " stroke="#88188c" stroke-width="3" filter="blur(1.3px)"/>`;
+					path3 = `<path d = " M ${rect1.left + rect1.width/2},${rect1.bottom - 1} L ${recttrail2.right - recttrail2.width/2},${recttrail2.top + 1} " stroke="#cccccc" stroke-width="3" filter="blur(1.1px)"/>`;
 					joinline += path3;
 				};
 				if(variable > 3  && red_flag3 == false){
 					let inputtrail3 = document.querySelector(".secsome3");
 					let recttrail3 = inputtrail3.getBoundingClientRect();
-					path4 = `<path d = " M ${rect1.left + rect1.width/2},${rect1.bottom - 1} L ${recttrail3.right - recttrail3.width/2},${recttrail3.top + 1} " stroke="#88188c" stroke-width="3" filter="blur(1.3px)"/>`;
+					path4 = `<path d = " M ${rect1.left + rect1.width/2},${rect1.bottom - 1} L ${recttrail3.right - recttrail3.width/2},${recttrail3.top + 1} " stroke="#cccccc" stroke-width="3" filter="blur(1.1px)"/>`;
 					joinline += path4;
 				};
 				line.innerHTML = joinline;
