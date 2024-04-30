@@ -29,6 +29,10 @@ let red_flag0 = false;
 let red_flag1= false;
 let red_flag2 = false;
 let red_flag3 = false;
+let invalid_no = false;
+let invalid_no1 = false;
+let invalid_no2 = false;
+let invalid_no3 = false;
 
 
 
@@ -69,6 +73,11 @@ for(let i=0; i < y; i++){
 	let adddiv = document.querySelector(".additional_div");
 	lsidiv.appendChild(adddiv);
 }}
+
+	if(x.value > 4 || x.value < 0){
+		alert("invalid input, please choose a no. between 1 to 4");
+	}
+
 	variable = x.value;
 	let i0 = document.querySelector(".numberclass");
 	i0.remove();
@@ -77,7 +86,7 @@ for(let i=0; i < y; i++){
 
 
 
-
+ // for creating number inputs which takes value for last inputs
 
 else if(e.target.classList.contains("btn03")){
 	let z0 = document.querySelector(".btn03");
@@ -193,9 +202,7 @@ else if(e.target.classList.contains("btn_red3")){
 	// for creating last inputs
 
 else if(e.target.classList.contains("ipnumbtn0")){
-	let c = document.querySelector(".ipnumbtn0");
-	c.remove();
-				
+
 	let a1 = document.querySelector("[name='inputbtn0']");
 	if(a1){
 	if(a1.value < 5){
@@ -213,90 +220,128 @@ else if(e.target.classList.contains("ipnumbtn0")){
 
 			document.querySelector(".somediv0").appendChild(somediv2);
 		}}
+	if(a1.value > 4 || a1.value < 0 ){
+			alert("invalid input, please choose a number between 1 to 4");
+			invalid_no = true;
+		}
+	if(!invalid_no){
+		let c = document.querySelector(".ipnumbtn0");
+		c.remove();
 		let i0 = document.querySelector(".inputbtn0");
 		i0.remove();
 			}
+	else if(invalid_no){
+		invalid_no = false;
+			}
 		}
+	}
 else if(e.target.classList.contains("ipnumbtn1")){
-	let c = document.querySelector(".ipnumbtn1");
-				c.remove();
-				
-				let a1 = document.querySelector("[name='inputbtn1']");
-				if(a1){
-				if(a1.value < 5){
-					let a2 = a1.value;
-					for(let i = 0; i < a2; i++){
-						let some2 = document.createElement("input");
-						let bttn = document.createElement("button");
-						some2.classList.add("some2");
-						bttn.classList.add("bttn1"+i);
 
-						let somediv2 = document.createElement("div");
-						somediv2.classList.add("somediv3"+i);
-						somediv2.appendChild(some2);
-						somediv2.appendChild(bttn);
+	let a1 = document.querySelector("[name='inputbtn1']");
+	if(a1){
+	if(a1.value < 5){
+		let a2 = a1.value;
+		for(let i = 0; i < a2; i++){
+			let some2 = document.createElement("input");
+			let bttn = document.createElement("button");
+			some2.classList.add("some2");
+			bttn.classList.add("bttn1"+i);
 
-						document.querySelector(".somediv1").appendChild(somediv2);
-					}}
-					let i0 = document.querySelector(".inputbtn1");
-					i0.remove();
-				}
+			let somediv2 = document.createElement("div");
+			somediv2.classList.add("somediv3"+i);
+			somediv2.appendChild(some2);
+			somediv2.appendChild(bttn);
+
+			document.querySelector(".somediv1").appendChild(somediv2);
+		}}
+	if(a1.value > 4 || a1.value < 0){
+			alert("invalid input, please choose a number between 1 to 4");
+			invalid_no1 = true;
+		}
+	if(!invalid_no1){
+			let c = document.querySelector(".ipnumbtn1");
+			c.remove();
+			let i0 = document.querySelector(".inputbtn1");
+			i0.remove();
+		}
+	else if(invalid_no1){
+		invalid_no1 = false;
 			}
+		}
+	}
 else if(e.target.classList.contains("ipnumbtn2")){
-	let c = document.querySelector(".ipnumbtn2");
-				c.remove();
 				
-				let a1 = document.querySelector("[name='inputbtn2']");
-				if(a1){
-				if(a1.value < 5){
-					let a2 = a1.value;
-					for(let i = 0; i < a2; i++){
-						let some2 = document.createElement("input");
-						let bttn = document.createElement("button");
-						some2.classList.add("some2");
-						bttn.classList.add("bttn2"+i);
+	let a1 = document.querySelector("[name='inputbtn2']");
+	if(a1){
+	if(a1.value < 5){
+		let a2 = a1.value;
+		for(let i = 0; i < a2; i++){
+			let some2 = document.createElement("input");
+			let bttn = document.createElement("button");
+			some2.classList.add("some2");
+			bttn.classList.add("bttn2"+i);
 
-						let somediv2 = document.createElement("div");
-						somediv2.classList.add("somediv4"+i);
-						somediv2.appendChild(some2);
-						somediv2.appendChild(bttn);
+			let somediv2 = document.createElement("div");
+			somediv2.classList.add("somediv4"+i);
+			somediv2.appendChild(some2);
+			somediv2.appendChild(bttn);
 
-						document.querySelector(".somediv2").appendChild(somediv2);
-					}}
-					let i0 = document.querySelector(".inputbtn2");
-					i0.remove();
-				}
+			document.querySelector(".somediv2").appendChild(somediv2);
+		}}
+	if(a1.value > 4 || a1.value < 0){
+			alert("invalid input, please choose a number between 1 to 4");
+			invalid_no2 = true;
 			}
+	if(!invalid_no2){
+			let c = document.querySelector(".ipnumbtn2");
+			c.remove();
+			let i0 = document.querySelector(".inputbtn2");
+			i0.remove();
+		}
+	else if(invalid_no2){
+		invalid_no2 = false;
+			}
+		}
+	}
 else if(e.target.classList.contains("ipnumbtn3")){
-	let c = document.querySelector(".ipnumbtn3");
-				c.remove();
 				
-				let a1 = document.querySelector("[name='inputbtn3']");
-				if(a1){
-				if(a1.value < 5){
-					let a2 = a1.value;
-					for(let i = 0; i < a2; i++){
-						let some2 = document.createElement("input");
-						let bttn = document.createElement("button");
-						some2.classList.add("some2");
-						bttn.classList.add("bttn3"+i);
+	let a1 = document.querySelector("[name='inputbtn3']");
+	if(a1){
+	if(a1.value < 5){
+		let a2 = a1.value;
+		for(let i = 0; i < a2; i++){
+			let some2 = document.createElement("input");
+			let bttn = document.createElement("button");
+			some2.classList.add("some2");
+			bttn.classList.add("bttn3"+i);
 
-						let somediv2 = document.createElement("div");
-						somediv2.classList.add("somediv5"+i);
-						somediv2.appendChild(some2);
-						somediv2.appendChild(bttn);
+			let somediv2 = document.createElement("div");
+			somediv2.classList.add("somediv5"+i);
+			somediv2.appendChild(some2);
+			somediv2.appendChild(bttn);
 
-						document.querySelector(".somediv3").appendChild(somediv2);
-					}}
-					let i0 = document.querySelector(".inputbtn3");
-					i0.remove();
-				}
+			document.querySelector(".somediv3").appendChild(somediv2);
+		}}
+	if(a1.value > 4 || a1.value < 0){
+			alert("invalid input, please choose a number between 1 to 4");
+			invalid_no3 = true;
 			}
+	if(!invalid_no3){
+			let c = document.querySelector(".ipnumbtn3");
+			c.remove();
+			let i0 = document.querySelector(".inputbtn3");
+			i0.remove();
+		}
+	else if(invalid_no3){
+		invalid_no3 = false;
+			}
+		}
+	}
 
 
 
 
-
+ // for deleteing final  inputs
 
 else if(e.target.classList.contains("bttn00")){
 	let zz = document.querySelector(".somediv20");
